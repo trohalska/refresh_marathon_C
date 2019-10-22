@@ -8,7 +8,7 @@ void mx_printint(int n) {
     if (n == 0) {
         mx_printchar('0');
     }
-    if (n < 0){        
+    if (n < 0){
         mx_printchar('-');
     }
     while (n != 0) {
@@ -25,6 +25,5 @@ void mx_printint(int n) {
     while (i >= 0) {
         mx_printchar(s[i]);
         i--;
-    }
-    write(1, "\n", 1);
+    }    
 }

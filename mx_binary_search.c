@@ -23,5 +23,6 @@ int mx_binary_search(char **arr, int size, const char *s, int *count) {
             f = m + 1;
         }
     }
+    *count = 0;
     return res;
 }
