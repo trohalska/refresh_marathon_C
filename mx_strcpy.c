@@ -1,10 +1,10 @@
 char *mx_strcpy(char *dst, const char *src) {
-    while (*src != '\0') {
-        *dst = *src;
-        src++;
-        dst++;
+    int i = 0;
+    while (src[i]) {
+        dst[i] = src[i];
+        i++;
     }
-    *dst = '\0';
+    dst[i] = '\0';
     return dst;
 }
 
